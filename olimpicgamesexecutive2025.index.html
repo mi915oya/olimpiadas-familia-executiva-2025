@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Família Executiva – Olimpíadas 2025 em Dubai</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a refined look */
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1a26; /* Dark blue-black background */
+            color: #e0e0e0; /* Light gray text for contrast */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cinzel Decorative', serif; /* Elegant font for titles */
+            color: #FFD700; /* Gold color for titles */
+        }
+
+        .section-bg {
+            background: linear-gradient(135deg, #1a2a3a 0%, #0d1a26 100%); /* Subtle gradient for sections */
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(45deg, #FFD700, #FFEA00); /* Gold gradient for special text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #FFD700, #FFEA00); /* Gold button gradient */
+            color: #1a2a3a; /* Dark text on gold */
+            padding: 0.75rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+        }
+
+        .stadium-card {
+            background-color: #2a3b4c; /* Darker blue for cards */
+            border-radius: 0.75rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .stadium-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Custom scrollbar for a sleek look */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a2a3a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FFD700;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFEA00;
+        }
+    </style>
+</head>
+<body class="antialiased leading-normal">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-6 shadow-xl sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="flex items-center">
+                <!-- Crown Icon (SVG) -->
+                <svg class="w-8 h-8 mr-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 2a4 4 0 00-4 4v2H4a2 2 0 00-2 2v4a2 2 0 002 2h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2V6a4 4 0 00-4-4zm-4 4a2 2 0 012-2h4a2 2 0 012 2v2H6V6z" clip-rule="evenodd"></path>
+                </svg>
+                <h1 class="text-2xl font-bold gold-gradient-text">Família Executiva</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-yellow-400 transition duration-300">Sobre</a></li>
+                    <li><a href="#modalities" class="hover:text-yellow-400 transition duration-300">Modalidades</a></li>
+                    <li><a href="#highlights" class="hover:text-yellow-400 transition duration-300">Destaques</a></li>
+                    <li><a href="#participation" class="hover:text-yellow-400 transition duration-300">Participar</a></li>
+                    <li><a href="#awards" class="hover:text-yellow-400 transition duration-300">Premiações</a></li>
+                    <li><a href="#gallery" class="hover:text-yellow-400 transition duration-300">Galeria</a></li>
+                    <li><a href="#contact" class="hover:text-yellow-400 transition duration-300">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0A192F/FFD700?text=Céu+de+Dubai+Futurista');">
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="relative z-10 p-8 rounded-lg">
+            <h2 class="text-5xl md:text-7xl font-bold gold-gradient-text mb-4 animate-pulse">Olimpíadas 2025 em Dubai</h2>
+            <p class="text-xl md:text-3xl text-white mb-8">De 3 a 23 de agosto, nos estádios mais luxuosos de Dubai.</p>
+            <div id="countdown" class="text-4xl md:text-6xl font-bold text-yellow-300 mb-8"></div>
+            <a href="#participation" class="btn-primary inline-block">Inscreva-se Agora!</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">Sobre o Evento</h3>
+            <p class="text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                De 3 a 23 de agosto, a Família Executiva promove um evento esportivo internacional de alto nível nos estádios mais luxuosos de Dubai. A competição reunirá membros oficiais da família em provas reais e extremamente competitivas, com árbitros profissionais, placar ao vivo e regras oficiais.
+            </p>
+        </div>
+    </section>
+
+    <!-- Modalities Section -->
+    <section id="modalities" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-12">Modalidades Confirmadas</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="stadium-card p-6">
+                    <img src="https://placehold.co/400x250/1a2a3a/FFD700?text=Futebol+3x3+Estádio+Lusail" alt="Futebol 3x3 no Lusail Stadium" class="rounded-lg mb-4 w-full h-auto">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Futebol 3x3</h4>
+                    <p class="text-gray-400">Estádio: Lusail Stadium</p>
+                </div>
+                <div class="stadium-card p-6">
+                    <img src="https://placehold.co/400x250/1a2a3a/FFD700?text=Vôlei+Indoor+Coca-Cola+Arena" alt="Vôlei indoor na Coca-Cola Arena" class="rounded-lg mb-4 w-full h-auto">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Vôlei indoor</h4>
+                    <p class="text-gray-400">Estádio: Coca-Cola Arena</p>
+                </div>
+                <div class="stadium-card p-6">
+                    <img src="https://placehold.co/400x250/1a2a3a/FFD700?text=Peteca+Dubai+Tennis" alt="Peteca de precisão no Dubai Tennis Stadium" class="rounded-lg mb-4 w-full h-auto">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Peteca de precisão</h4>
+                    <p class="text-gray-400">Estádio: Dubai Tennis Stadium</p>
+                </div>
+                <div class="stadium-card p-6">
+                    <img src="https://placehold.co/400x250/1a2a3a/FFD700?text=Queimada+Zabeel+Park" alt="Queimada tática na Zabeel Park Arena" class="rounded-lg mb-4 w-full h-auto">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Queimada tática</h4>
+                    <p class="text-gray-400">Estádio: Zabeel Park Arena</p>
+                </div>
+                <div class="stadium-card p-6">
+                    <img src="https://placehold.co/400x250/1a2a3a/FFD700?text=UNO+Dubai+Esports" alt="UNO Profissional no Dubai Esports Center" class="rounded-lg mb-4 w-full h-auto">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">UNO Profissional</h4>
+                    <p class="text-gray-400">Estádio: Dubai Esports Center</p>
+                </div>
+                <div class="stadium-card p-6">
+                    <img src="https://placehold.co/400x250/1a2a3a/FFD700?text=Pega+Varetas+Olímpico" alt="Pega Varetas Olímpico" class="rounded-lg mb-4 w-full h-auto">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Pega Varetas Olímpico</h4>
+                    <p class="text-gray-400">Local: A ser definido</p>
+                </div>
+                <div class="stadium-card p-6 col-span-full md:col-span-1 md:col-start-2">
+                    <img src="https://placehold.co/400x250/1a2a3a/FFD700?text=Corrida+Obstáculos+Deserto" alt="Corrida de Obstáculos Executiva" class="rounded-lg mb-4 w-full h-auto">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Corrida de Obstáculos Executiva</h4>
+                    <p class="text-gray-400">Local: Circuito no deserto com obstáculos físicos e mentais</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daily Highlights Section (New LLM Feature) -->
+    <section id="highlights" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">✨ Destaques do Dia ✨</h3>
+            <p class="text-lg text-gray-300 mb-6 max-w-3xl mx-auto">
+                Clique no botão abaixo para gerar um destaque emocionante das Olimpíadas, como se fosse narrado por um comentarista esportivo!
+            </p>
+            <button id="generateHighlightBtn" class="btn-primary inline-block mb-8">
+                Gerar Destaque do Dia
+            </button>
+            <div id="highlightOutput" class="bg-gray-800 p-6 rounded-lg shadow-xl text-gray-300 text-lg italic min-h-[100px] flex items-center justify-center text-center">
+                Clique no botão para ver um destaque!
+            </div>
+            <div id="loadingIndicator" class="hidden mt-4 text-yellow-400">
+                Gerando destaque...
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Participate Section -->
+    <section id="participation" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">Como Participar</h3>
+            <p class="text-lg text-gray-300 mb-6 max-w-2xl mx-auto">
+                Inscreva-se preenchendo o formulário abaixo com seus dados e escolhas de modalidades.
+            </p>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                <h4 class="text-3xl font-bold gold-gradient-text mb-4">Formulário de Inscrição</h4>
+                <p class="text-gray-400 mb-6">
+                    Clique no botão abaixo para acessar o formulário de inscrição oficial.
+                </p>
+                <a href="https://docs.google.com/forms/d/1_57YL7ZU0Ks1VeBnWqvlkoeUVx6ziT5f1Ap1RX5tIZc/edit" target="_blank" class="btn-primary inline-block">
+                    Acessar Formulário de Inscrição
+                </a>
+                <p class="text-gray-400 text-sm mt-4">
+                    Você precisará fornecer: Nome completo, País de origem, Modalidades escolhidas, Número e cor do uniforme, Categoria (individual ou por equipe).
+                </p>
+            </div>
+
+            <div class="mt-12 bg-gray-800 p-8 rounded-lg shadow-xl">
+                <h4 class="text-3xl font-bold gold-gradient-text mb-4">Regulamento</h4>
+                <ul class="text-left text-gray-300 list-disc list-inside max-w-2xl mx-auto">
+                    <li class="mb-2">A competição segue padrões oficiais, com árbitros neutros, uso de cronômetro, pontuação real e transmissão interna.</li>
+                    <li>Faltas injustificadas, atrasos e atitudes antiéticas resultam em desclassificação automática.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">Premiações</h3>
+            <div class="flex flex-wrap justify-center gap-8">
+                <div class="award-item bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/1a2a3a/FFD700?text=Medalha+Personalizada" alt="Medalha Personalizada" class="mb-4 w-24 h-24 object-contain">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Medalhas Personalizadas</h4>
+                    <p class="text-gray-400 text-center">Design exclusivo para os campeões.</p>
+                </div>
+                <div class="award-item bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/1a2a3a/FFD700?text=Troféu+Oficial" alt="Troféus Oficiais" class="mb-4 w-24 h-24 object-contain">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Troféus Oficiais</h4>
+                    <p class="text-gray-400 text-center">Símbolo de excelência e vitória.</p>
+                </div>
+                <div class="award-item bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/1a2a3a/FFD700?text=Brindes+de+Luxo" alt="Brindes de Luxo" class="mb-4 w-24 h-24 object-contain">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Brindes de Luxo</h4>
+                    <p class="text-gray-400 text-center">Presentes exclusivos dos patrocinadores.</p>
+                </div>
+                <div class="award-item bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/1a2a3a/FFD700?text=Criptomoedas" alt="Premiações em Criptomoedas" class="mb-4 w-24 h-24 object-contain">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Criptomoedas</h4>
+                    <p class="text-gray-400 text-center">Recompensas modernas e valiosas.</p>
+                </div>
+                <div class="award-item bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/100x100/1a2a3a/FFD700?text=Anúncios+Oficiais" alt="Anúncios Oficiais" class="mb-4 w-24 h-24 object-contain">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">Anúncios Oficiais</h4>
+                    <p class="text-gray-400 text-center">Destaque nos canais da Família Executiva Internacional.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ceremonies Section -->
+    <section id="ceremonies" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">Cerimônias</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                    <h4 class="text-3xl font-bold gold-gradient-text mb-4">Cerimônia de Abertura</h4>
+                    <p class="text-gray-300 mb-4">
+                        Dia 3 de agosto, no Lusail Stadium. Um espetáculo inesquecível com desfile das equipes em uniformes exclusivos, o hino da família executiva e uma deslumbrante queima de fogos.
+                    </p>
+                    <img src="https://placehold.co/600x400/1a2a3a/FFD700?text=Cerimônia+Abertura+Lusail" alt="Cerimônia de Abertura no Lusail Stadium" class="rounded-lg w-full h-auto">
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-xl">
+                    <h4 class="text-3xl font-bold gold-gradient-text mb-4">Cerimônia de Encerramento</h4>
+                    <p class="text-gray-300 mb-4">
+                        Dia 23 de agosto no icônico Burj Al Arab, com a solene entrega de medalhas, um jantar de gala exclusivo e uma celebração executiva memorável.
+                    </p>
+                    <img src="https://placehold.co/600x400/1a2a3a/FFD700?text=Cerimônia+Encerramento+Burj+Al+Arab" alt="Cerimônia de Encerramento no Burj Al Arab" class="rounded-lg w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Uniforms & Emblems Gallery Section -->
+    <section id="gallery" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">Galeria de Uniformes e Brasões</h3>
+            <p class="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
+                Explore os designs exclusivos dos uniformes e os brasões que representam cada equipe.
+                **As fotos oficiais dos uniformes estarão disponíveis para visualização no formulário de inscrição.**
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+MARIO+%26+SONIC" alt="Uniforme Team Mario & Sonic" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM MARIO & SONIC 🔴🔵</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+DOS+ROSA" alt="Uniforme Team Dos Rosa" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM DOS ROSA 🩷</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+BLOODBLACK" alt="Uniforme Team Bloodblack" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM BLOODBLACK 🩸🖤</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+HEELERS" alt="Uniforme Team Heelers" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM HEELERS 🐾</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+ENCANTO" alt="Uniforme Team Encanto" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM ENCANTO 🪄</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+BABIES" alt="Uniforme Team Babies" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM BABIES 🍼🐥</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+PETS" alt="Uniforme Team Pets" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM PETS 🐶</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+BARBIE" alt="Uniforme Team Barbie" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM BARBIE 🅱️🩷</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+MANUAL+DO+MUNDO" alt="Uniforme Team Manual do Mundo" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM MANUAL DO MUNDO 🔵🔬</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+TYAS+DO+ROCK" alt="Uniforme Team Tyas do Rock" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM TYAS DO ROCK 💀👩‍🎤</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+DRAGONS" alt="Uniforme Team Dragons" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM DRAGONS 🔥</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+DUOLINGO" alt="Uniforme Team Duolingo" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM DUOLINGO 🦉🟢</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+CERVEJINOS" alt="Uniforme Team Cervejinos" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM CERVEJINOS 🔴🔵</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg shadow-md">
+                    <img src="https://placehold.co/300x300/1a2a3a/FFD700?text=TEAM+ALCATEIA" alt="Uniforme Team Alcateia" class="rounded-md w-full h-auto mb-2">
+                    <p class="text-gray-400 text-sm">TEAM ALCATEIA 🔴🔵</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stadium Map Section -->
+    <section id="stadium-map" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">Mapa dos Estádios de Dubai</h3>
+            <p class="text-lg text-gray-300 mb-6 max-w-3xl mx-auto">
+                Visualize a localização dos estádios e as datas dos jogos em cada um.
+            </p>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-xl h-96 flex items-center justify-center">
+                <p class="text-gray-400 text-xl text-center">
+                    (Este é um **placeholder** para um mapa interativo, como Google Maps. <br>
+                    Não é possível incorporar um mapa funcional diretamente aqui. <br>
+                    Em uma implementação real do site, a API do Google Maps seria usada para exibir o mapa interativo com marcadores para os estádios.)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tournament Legends Section -->
+    <section id="legends" class="py-16 px-4 section-bg mx-auto max-w-6xl my-12">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-8">Lendas do Torneio</h3>
+            <p class="text-lg text-gray-300 mb-8 max-w-3xl mx-auto">
+                Conheça os atletas que se destacam e fazem história nas Olimpíadas da Família Executiva.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/1a2a3a/FFD700?text=Atleta+Destaque+1" alt="Atleta Destaque 1" class="rounded-full w-32 h-32 object-cover mb-4 border-4 border-yellow-400">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">MARIO PROWER</h4>
+                    <p class="text-gray-400">Modalidade: Futebol 3x3</p>
+                    <p class="text-gray-400 text-sm mt-2">Destaque da semana por sua performance excepcional e liderança em campo.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/1a2a3a/FFD700?text=Atleta+Destaque+2" alt="Atleta Destaque 2" class="rounded-full w-32 h-32 object-cover mb-4 border-4 border-yellow-400">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">VOID CAUAN</h4>
+                    <p class="text-gray-400">Modalidade: Peteca de Precisão</p>
+                    <p class="text-gray-400 text-sm mt-2">Reconhecido pela sua técnica impecável e foco inigualável.</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center">
+                    <img src="https://placehold.co/150x150/1a2a3a/FFD700?text=Atleta+Destaque+3" alt="Atleta Destaque 3" class="rounded-full w-32 h-32 object-cover mb-4 border-4 border-yellow-400">
+                    <h4 class="text-2xl font-bold gold-gradient-text mb-2">KNUCLES PROWER</h4>
+                    <p class="text-gray-400">Modalidade: Corrida de Obstáculos</p>
+                    <p class="text-gray-400 text-sm mt-2">Um verdadeiro exemplo de resiliência e força física e mental.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gradient-to-r from-indigo-900 to-blue-900 text-white py-8 mt-12">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-lg gold-gradient-text mb-4">Dubai espera por você. A vitória é destino.</p>
+            <p class="text-sm text-gray-400">&copy; 2025 Família Executiva. Todos os direitos reservados.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-gray-400 hover:text-yellow-400 transition duration-300">Facebook</a>
+                <a href="#" class="text-gray-400 hover:text-yellow-400 transition duration-300">Instagram</a>
+                <a href="#" class="text-gray-400 hover:text-yellow-400 transition duration-300">Twitter</a>
+            </div>
+            <p class="text-xs text-gray-500 mt-4">
+                Para dúvidas e suporte, entre em contato conosco através dos canais oficiais.
+            </p>
+            <!-- Placeholder for VIP Login -->
+            <div class="mt-8">
+                <h4 class="text-xl font-bold gold-gradient-text mb-2">Área VIP</h4>
+                <p class="text-gray-400 text-sm">
+                    (Funcionalidade de login para membros especiais da Família Executiva. <br>
+                    Em uma implementação real, exigiria um sistema de autenticação.)
+                </p>
+                <a href="#" class="btn-primary inline-block mt-4 text-sm">Acessar Área VIP</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Countdown Timer Logic
+        const countdownElement = document.getElementById('countdown');
+        const eventDate = new Date('August 3, 2025 00:00:00').getTime(); // August 3, 2025
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            if (distance < 0) {
+                countdownElement.innerHTML = "O evento começou!";
+            } else {
+                countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }
+
+        // Update every second
+        setInterval(updateCountdown, 1000);
+        // Initial call to display immediately
+        updateCountdown();
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Gemini API Integration for Daily Highlights
+        const generateHighlightBtn = document.getElementById('generateHighlightBtn');
+        const highlightOutput = document.getElementById('highlightOutput');
+        const loadingIndicator = document.getElementById('loadingIndicator');
+
+        // Function to simulate exponential backoff for API calls
+        async function fetchWithExponentialBackoff(url, options, retries = 3, delay = 1000) {
+            for (let i = 0; i < retries; i++) {
+                try {
+                    const response = await fetch(url, options);
+                    if (response.ok) {
+                        return response;
+                    } else if (response.status === 429) { // Too Many Requests
+                        console.warn(`Rate limit hit. Retrying in ${delay / 1000} seconds...`);
+                        await new Promise(resolve => setTimeout(resolve, delay));
+                        delay *= 2; // Double the delay for the next retry
+                    } else {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                } catch (error) {
+                    if (i === retries - 1) {
+                        throw error; // Re-throw if it's the last retry
+                    }
+                    console.error(`Fetch error: ${error.message}. Retrying...`);
+                    await new Promise(resolve => setTimeout(resolve, delay));
+                    delay *= 2;
+                }
+            }
+        }
+
+        generateHighlightBtn.addEventListener('click', async () => {
+            highlightOutput.textContent = ''; // Clear previous content
+            loadingIndicator.classList.remove('hidden'); // Show loading indicator
+
+            const prompts = [
+                "Crie um destaque emocionante de uma partida de futebol 3x3 nas Olimpíadas da Família Executiva em Dubai. Foco na agilidade e um gol decisivo.",
+                "Escreva um breve comentário sobre uma jogada incrível de vôlei indoor, com um bloqueio espetacular e um ataque fulminante.",
+                "Descreva um momento de alta tensão em uma partida de peteca de precisão, com um ponto final que decidiu o jogo.",
+                "Narração de um lance estratégico e surpreendente na queimada tática, que virou o placar a favor de uma equipe.",
+                "Um destaque de uma rodada final de UNO Profissional, com uma reviravolta inesperada e a vitória dramática de um jogador.",
+                "Crie um resumo de um trecho desafiador da Corrida de Obstáculos Executiva, mencionando superação física e mental."
+            ];
+            const randomPrompt = prompts[Math.floor(Math.random() * prompts.length)];
+
+            try {
+                let chatHistory = [];
+                chatHistory.push({ role: "user", parts: [{ text: randomPrompt }] });
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Canvas will automatically provide the API key at runtime
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                const response = await fetchWithExponentialBackoff(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    highlightOutput.textContent = text;
+                } else {
+                    highlightOutput.textContent = 'Não foi possível gerar um destaque. Tente novamente.';
+                    console.error('Unexpected API response structure:', result);
+                }
+            } catch (error) {
+                highlightOutput.textContent = 'Ocorreu um erro ao gerar o destaque. Por favor, tente novamente mais tarde.';
+                console.error('Error calling Gemini API:', error);
+            } finally {
+                loadingIndicator.classList.add('hidden'); // Hide loading indicator
+            }
+        });
+    </script>
+</body>
+</html>
